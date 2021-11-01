@@ -20,11 +20,15 @@
 * Hypothesize some model M with random weights _θ_
 * Formulate the task as an optimization problem
   
-<center><a href="https://www.codecogs.com/eqnedit.php?latex=\fn_jvn&space;\min_{\theta}&space;\mathcal{L}(y,&space;\mathcal{F}(x))" target="_blank"><img src="https://latex.codecogs.com/png.latex?\fn_jvn&space;\min_{\theta}&space;\mathcal{L}(y,&space;\mathcal{F}(x))" title="\min_{\theta} \mathcal{L}(y, \mathcal{F}(x))" /></a></center>
+<p align="center">
+<a href="https://www.codecogs.com/eqnedit.php?latex=\fn_jvn&space;\min_{\theta}&space;\mathcal{L}(y,&space;\mathcal{F}(x))" target="_blank"><img src="https://latex.codecogs.com/png.latex?\fn_jvn&space;\min_{\theta}&space;\mathcal{L}(y,&space;\mathcal{F}(x))" title="\min_{\theta} \mathcal{L}(y, \mathcal{F}(x))" /></a>
+</p>
 
 * Use gradient descent to update the model weights until convergence
 
-<center><a href="https://www.codecogs.com/eqnedit.php?latex=\fn_jvn&space;\theta&space;\leftarrow&space;\theta&space;-&space;\eta&space;\nabla_{\theta}&space;\mathcal{L}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\fn_jvn&space;\theta&space;\leftarrow&space;\theta&space;-&space;\eta&space;\nabla_{\theta}&space;\mathcal{L}" title="\theta \leftarrow \theta - \eta \nabla_{\theta} \mathcal{L}" /></a></center>
+<p align="center">
+<a href="https://www.codecogs.com/eqnedit.php?latex=\fn_jvn&space;\theta&space;\leftarrow&space;\theta&space;-&space;\eta&space;\nabla_{\theta}&space;\mathcal{L}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\fn_jvn&space;\theta&space;\leftarrow&space;\theta&space;-&space;\eta&space;\nabla_{\theta}&space;\mathcal{L}" title="\theta \leftarrow \theta - \eta \nabla_{\theta} \mathcal{L}" /></a>
+</p>
 
 ---
 
@@ -50,8 +54,10 @@
 * [Convolutions in CNN](https://towardsdatascience.com/intuitively-understanding-convolutions-for-deep-learning-1f6f42faee1)
 * Extending to graph - aggregate information from neighboring nodes
 
-<center><img src="figures/fig-01-01.png"/></center>
-<center><b>Source: CS-224W slide 06-GNN-1.pdf</b></center>
+<p align="center">
+<img src="figures/fig-01-01.png"/><br/>
+<b>Source: CS-224W slide 06-GNN-1.pdf</b>
+</p>
 
 ---
 
