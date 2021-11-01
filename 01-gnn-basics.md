@@ -68,7 +68,9 @@
 * Loss function Cross Entropy for classification, Mean Squared Error for regression
 * Uses gradient descent to optimize loss function
 
-<center><img src="figures/fig-01-02.jpg"/></center>
+<p align="center">
+<img src="figures/fig-01-02.jpg"/>
+</p>
 
 ---
 
@@ -78,8 +80,10 @@
 * In a GNN with k convolution layers, each node has information about nodes k-hops away
 * Value of k dictated by application, usually small (unlike giant CNNs)
 
-<center><img src="figures/fig-01-03.png"/></center>
-<center><b>Source: CS-224W slide 06-GNN-1.pdf</b></center>
+<p align="center">
+<img src="figures/fig-01-03.png"/><br/>
+<b>Source: CS-224W slide 06-GNN-1.pdf</b>
+</p>
 
 ---
 
@@ -90,8 +94,10 @@
 * Each node defines computation graph based on its neighborhood, i.e. each node has its own neural network!
 * Achieved using __message passing__
 
-<center><img src="figures/fig-01-04.png"/></center>
-<center><b>Source: CS-224W slide 06-GNN-1.pdf</b></center>
+<p align="center">
+<img src="figures/fig-01-04.png"/><br/>
+<b>Source: CS-224W slide 06-GNN-1.pdf</b>
+</p>
 
 ---
 
@@ -121,7 +127,10 @@
   * Graph Transforms ([torch_geometric.transforms](https://pytorch-geometric.readthedocs.io/en/latest/modules/transforms.html))
   * Popular Graph Datasets ([torch_geometric.datasets](https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html))
 
-<center><img src="figures/fig-01-05.png" width="200" height="200"/><img src="figures/fig-01-06.png" width="150" height="150"/></center>
+<p align="center">
+<img src="figures/fig-01-05.png" width="200" height="200"/>
+<img src="figures/fig-01-06.png" width="150" height="150"/>
+</p>
 
 ---
 
@@ -131,11 +140,19 @@
 
 * __Graph Convolution Network (GCN)__
   * Aggregate self-features and neighbor features
-<center><a href="https://www.codecogs.com/eqnedit.php?latex=\fn_jvn&space;h_v^{(k&plus;1)}&space;=&space;\sigma(W_k&space;\sum_{u&space;\in&space;N(v)}&space;\frac{h_u^{(k)}}{|N(v)|})&space;&plus;&space;B_k&space;h_v^{(k)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;h_v^{(k&plus;1)}&space;=&space;\sigma(W_k&space;\sum_{u&space;\in&space;N(v)}&space;\frac{h_u^{(k)}}{|N(v)|})&space;&plus;&space;B_k&space;h_v^{(k)}" title="h_v^{(k+1)} = \sigma(W_k \sum_{u \in N(v)} \frac{h_u^{(k)}}{|N(v)|}) + B_k h_v^{(k)}" /></a></center>
+
+<p align="center">
+<a href="https://www.codecogs.com/eqnedit.php?latex=\fn_jvn&space;h_v^{(k&plus;1)}&space;=&space;\sigma(W_k&space;\sum_{u&space;\in&space;N(v)}&space;\frac{h_u^{(k)}}{|N(v)|})&space;&plus;&space;B_k&space;h_v^{(k)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\fn_jvn&space;h_v^{(k&plus;1)}&space;=&space;\sigma(W_k&space;\sum_{u&space;\in&space;N(v)}&space;\frac{h_u^{(k)}}{|N(v)|})&space;&plus;&space;B_k&space;h_v^{(k)}" title="h_v^{(k+1)} = \sigma(W_k \sum_{u \in N(v)} \frac{h_u^{(k)}}{|N(v)|}) + B_k h_v^{(k)}" /></a>
+</p>
+
 * __Graph Attention Network (GAT)__
   * Aggregate neighboring features with weights derived from attention mechanism (between self-features and all neighbor features)
   * Attention computed using [Bahdanau model](https://arxiv.org/abs/1409.0473) using feedforward network
-<center><a href="https://www.codecogs.com/eqnedit.php?latex=\fn_jvn&space;\begin{align*}&space;a_{ij}&space;&=&space;attention(h_i,&space;h_j)&space;\\&space;\alpha_{ij}&space;&=&space;\frac{exp(a_{ij})}{\sum_{k&space;\in&space;N(i)}&space;exp(a_{ik})}&space;\\&space;h_v^{(k&plus;1)}&space;&=&space;\sigma(\sum_{i&space;\in&space;N(v)}&space;\alpha_{iv}&space;W&space;h_i^{(k)})&space;\end{align*}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\fn_jvn&space;\begin{align*}&space;a_{ij}&space;&=&space;attention(h_i,&space;h_j)&space;\\&space;\alpha_{ij}&space;&=&space;\frac{exp(a_{ij})}{\sum_{k&space;\in&space;N(i)}&space;exp(a_{ik})}&space;\\&space;h_v^{(k&plus;1)}&space;&=&space;\sigma(\sum_{i&space;\in&space;N(v)}&space;\alpha_{iv}&space;W&space;h_i^{(k)})&space;\end{align*}" title="\begin{align*} a_{ij} &= attention(h_i, h_j) \\ \alpha_{ij} &= \frac{exp(a_{ij})}{\sum_{k \in N(i)} exp(a_{ik})} \\ h_v^{(k+1)} &= \sigma(\sum_{i \in N(v)} \alpha_{iv} W h_i^{(k)}) \end{align*}" /></a></center>
+
+<p align="center">
+<a href="https://www.codecogs.com/eqnedit.php?latex=\fn_jvn&space;\begin{align*}&space;a_{ij}&space;&=&space;attention(h_i,&space;h_j)&space;\\&space;\alpha_{ij}&space;&=&space;\frac{exp(a_{ij})}{\sum_{k&space;\in&space;N(i)}&space;exp(a_{ik})}&space;\\&space;h_v^{(k&plus;1)}&space;&=&space;\sigma(\sum_{i&space;\in&space;N(v)}&space;\alpha_{iv}&space;W&space;h_i^{(k)})&space;\end{align*}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\fn_jvn&space;\begin{align*}&space;a_{ij}&space;&=&space;attention(h_i,&space;h_j)&space;\\&space;\alpha_{ij}&space;&=&space;\frac{exp(a_{ij})}{\sum_{k&space;\in&space;N(i)}&space;exp(a_{ik})}&space;\\&space;h_v^{(k&plus;1)}&space;&=&space;\sigma(\sum_{i&space;\in&space;N(v)}&space;\alpha_{iv}&space;W&space;h_i^{(k)})&space;\end{align*}" title="\begin{align*} a_{ij} &= attention(h_i, h_j) \\ \alpha_{ij} &= \frac{exp(a_{ij})}{\sum_{k \in N(i)} exp(a_{ik})} \\ h_v^{(k+1)} &= \sigma(\sum_{i \in N(v)} \alpha_{iv} W h_i^{(k)}) \end{align*}" /></a>
+</p>
+
 * __GraphSAGE (SAmple and AggreGatE)__
   * Sample a subset of neighbors instead of using all of them (for scalability)
   * Importance sampling
@@ -161,7 +178,9 @@
   * `data.pos` -- node position matrix with shape `(num_nodes, num_dimensions)`
 * Parallelization over mini-batch achieved by creating block diagonal adjacency matrices (defined by `edge_index`), concatenating feature and target matrices in the node dimension, allows handling different number of nodes and edges over examples in single batch
 
-<center><img src="figures/fig-01-07.png"/></center>
+<p align="center">
+<img src="figures/fig-01-07.png"/>
+</p>
 
 ---
 
