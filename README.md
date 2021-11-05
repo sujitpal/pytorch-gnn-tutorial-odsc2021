@@ -12,10 +12,11 @@ In this tutorial, we will introduce GNN concepts and popular GNN architectures s
 
 Attendees are expected to come away from the talk with an understanding of GNN features and tools for implementing them. To derive the most value from the talk, attendees should be familiar with Python and Pytorch programming.
 
-## Contents
+## Table of Contents
 
 * [GNN Basics](01-gnn-basics.md)
 * Node classification example ([Exercise](02x-node-classification.ipynb) | [Solution](02-node-classification.ipynb))
+* Graph classification example ([Exercise](03x-graph-classification.ipynb) | [Solution](03-graph-classification.ipynb))
 
 ## References
 
