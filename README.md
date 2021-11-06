@@ -17,6 +17,7 @@ Attendees are expected to come away from the talk with an understanding of GNN f
 * [GNN Basics](01-gnn-basics.md)
 * Node classification example ([Exercise](02x-node-classification.ipynb) | [Solution](02-node-classification.ipynb))
 * Graph classification example ([Exercise](03x-graph-classification.ipynb) | [Solution](03-graph-classification.ipynb))
+* Link Prediction example ([Exercise](04x-link-prediction.ipynb) | [Solution](04-link-prediction.ipynb))
 
 ## References
 
