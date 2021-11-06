@@ -48,6 +48,7 @@ hetero_conv = HeteroConv({
   * In Memory Dataset -- extend `torch_geometric.data.InMemoryDataset`
   * On Disk Dataset -- extend `torch_geometric.data.Dataset`
 * [Example code to create custom dataset](https://pytorch-geometric.readthedocs.io/en/latest/notes/create_dataset.html)
-* Exercise: Create custom dataset
+* [Video: Creating a Custom Dataset in Pytorch Geometric](https://www.youtube.com/watch?v=QLIkOtKS4os) by DeepFindr
+* [Exercise: Create custom dataset](07x-custom-dataset.ipynb)
 
 ---

@@ -19,6 +19,7 @@ Attendees are expected to come away from the talk with an understanding of GNN f
 * Graph classification example ([Exercise](03x-graph-classification.ipynb) | [Solution](03-graph-classification.ipynb))
 * Link Prediction example ([Exercise](04x-link-prediction.ipynb) | [Solution](04-link-prediction.ipynb))
 * [GNN Extensions](05-gnn-extensions.md)
+* Custom Dataset example ([Exercise](07x-custom-dataset.ipynb) | [Solution](07-custom-dataset.ipynb))
 
 ## References
 
