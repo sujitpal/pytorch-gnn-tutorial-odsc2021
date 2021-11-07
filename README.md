@@ -1,8 +1,6 @@
-# pytorch-gnn-tutorial-odsc2021
+# Deep Learning with Graphs -- an introduction to Graph Neural Networks (with code examples in Pytorch Geometric)
 
-Repository for GNN tutorial using Pytorch and Pytorch Geometric (PyG) for ODSC 2021
-
-**Talk title: Deep Learning with Graphs -- an introduction to Graph Neural Networks (with code examples in Pytorch Geometric)**
+_Repository for tutorial to be presented at [ODSC West 2021](https://odsc.com/california)._
 
 ## Abstract
 
