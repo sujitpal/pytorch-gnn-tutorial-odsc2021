@@ -31,7 +31,7 @@ hetero_conv = HeteroConv({
 </p>
 
 * Custom graph layers possible by extending `torch_geometric.nn.MessagePassing` (see [Creating Message Passing Networks](https://pytorch-geometric.readthedocs.io/en/latest/notes/create_gnn.html) for example code)
-* Exercise: Create custom Graph Attention (GAT) layer.
+* [Exercise: Create custom Graph Attention (GAT) layer.](06x-custom-layer.ipynb)
 
 ---
 

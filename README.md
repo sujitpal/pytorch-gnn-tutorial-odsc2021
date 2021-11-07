@@ -19,6 +19,7 @@ Attendees are expected to come away from the talk with an understanding of GNN f
 * Graph classification example ([Exercise](03x-graph-classification.ipynb) | [Solution](03-graph-classification.ipynb))
 * Link Prediction example ([Exercise](04x-link-prediction.ipynb) | [Solution](04-link-prediction.ipynb))
 * [GNN Extensions](05-gnn-extensions.md)
+* Custom Layer example ([Exercise](06x-custom-layer.ipynb) | [Solution](06-custom-layer.ipynb))
 * Custom Dataset example ([Exercise](07x-custom-dataset.ipynb) | [Solution](07-custom-dataset.ipynb))
 
 ## References
@@ -26,5 +27,4 @@ Attendees are expected to come away from the talk with an understanding of GNN f
 * [Graph Neural Networks and Some of GNN Applications -- Everything you need to know](https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications) (Menzil 2021) -- blog post
 * [CS224W: Machine Learning with Graphs](http://web.stanford.edu/class/cs224w/)
 * [Graph Convolutional Networks](https://tkipf.github.io/graph-convolutional-networks/) (Kipf 2016) -- blog post
-* [Link Prediction using Graph Neural Networks](https://docs.dgl.ai/tutorials/blitz/4_link_predict.html) -- from DGL documentation
 * [Pytorch Geometric Introduction by Example](https://pytorch-geometric.readthedocs.io/en/latest/notes/introduction.html) -- PyG documentation
