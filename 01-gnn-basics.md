@@ -8,8 +8,8 @@
   * atoms in molecular structure
 * Matrix Representation: Adjacency Matrix _A_
   * For graph with _n_ nodes, _A_ has shape _(n, n)_
-  * If nodes _i_ and _j_ are connected, _Aij_ and _Aji_ = 1
-  * Minor variations for directed graphs (_Aij != Aji_) and weighted graphs (_Aij = w_)
+  * If nodes _i_ and _j_ are connected, _A(i, j)_ and _A(j, i)_ = 1
+  * Minor variations for directed graphs (_A(i, j) != A(j, i)_) and weighted graphs (_A(i, j) = w_)
 * Graphs can optionally have node features _X_
   * For graph with _n_ nodes and feature vector of size _f_, _X_ has shape _(n, f)_
 * Graphs can optionally also have edge features 
