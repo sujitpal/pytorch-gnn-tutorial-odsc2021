@@ -1,13 +1,15 @@
 # Graphs
 
-* Data Structure consisting of nodes and edges, _G = (V, E)_
-* Represents real-world objects, examples:
+* Data Structure consisting of nodes (also known as Vertices) and edges, _G = (V, E)_
+* Can represent real-world objects, examples:
   * words in a document,  
   * documents in a citation network,
   * people and organizations in a social media network, 
   * atoms in molecular structure
 * Matrix Representation: Adjacency Matrix _A_
   * For graph with _n_ nodes, _A_ has shape _(n, n)_
+  * If nodes _i_ and _j_ are connected, _Aij_ and _Aji_ = 1
+  * Minor variations for directed graphs (_Aij != Aji_) and weighted graphs (_Aij = w_)
 * Graphs can optionally have node features _X_
   * For graph with _n_ nodes and feature vector of size _f_, _X_ has shape _(n, f)_
 * Graphs can optionally also have edge features 
@@ -16,7 +18,7 @@
 
 # Machine Learning Models
 
-* Learn a mapping _F_ from an input space _X_ to an output space _y_
+* Goal: Learn a mapping _F_ from an input space _X_ to an output space _y_
 * Hypothesize some model M with random weights _θ_
 * Formulate the task as an optimization problem
   
@@ -30,6 +32,7 @@
 <a href="https://www.codecogs.com/eqnedit.php?latex=\fn_jvn&space;\theta&space;\leftarrow&space;\theta&space;-&space;\eta&space;\nabla_{\theta}&space;\mathcal{L}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\fn_jvn&space;\theta&space;\leftarrow&space;\theta&space;-&space;\eta&space;\nabla_{\theta}&space;\mathcal{L}" title="\theta \leftarrow \theta - \eta \nabla_{\theta} \mathcal{L}" /></a>
 </p>
 
+* Test fitted model for accuracy on new data, try a different model M if needed
 ---
 
 # Graph Models for Machine Learning
@@ -40,7 +43,7 @@
     * regular lattice structures
   * Recurrent Neural Networks
     * text and sequence data
-    * line graphs
+    * time series data
 * Problems with graphs
   * Topological complexity
   * Indeterminate size
@@ -172,7 +175,7 @@
 * Dataset ([torch_geometric.data.Dataset](https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Dataset) -- wrapper creating graph datasets
 * Data ([torch_geometric.data.Data](https://pytorch-geometric.readthedocs.io/en/latest/modules/data.html#torch_geometric.data.Data) -- represents a single graph in PyG, has following attributes by default.
   * `data.x` -- node feature matrix with shape `(num_nodes, num_node_features)`
-  * `data.edge_index` -- edges in COO format with shape `(2, num_edges)`
+  * `data.edge_index` -- edges in COO (coordinate) format with shape `(2, num_edges)`
   * `data.edge_attr` -- edge feature matrix with shape `(num_edges, num_edge_features)`
   * `data.y` -- target matrix with shape `(num_nodes, *)`
   * `data.pos` -- node position matrix with shape `(num_nodes, num_dimensions)`
@@ -196,7 +199,7 @@
   * Predicts if there is a connection between two entities in a graph
   * Example -- Infer / Predict social connections in social network graph
 * __Graph clustering__
-  * Use GNN (without classifier head) as encoder and cluster feature maps
+  * Use GNN (without classifier head) as encoder then cluster feature maps
 * __Generative Graph Models__
   * Use Variational AutoEncoder (VAE) that learns to predict graph's Adjacency Matrix (like images)
   * Build graph sequentially, starting with subgraph and applying nodes and edges sequentially
