@@ -20,6 +20,12 @@ Attendees are expected to come away from the talk with an understanding of GNN f
 * Custom Layer example ([Exercise](06x-custom-layer.ipynb) | [Solution](06-custom-layer.ipynb))
 * Custom Dataset example ([Exercise](07x-custom-dataset.ipynb) | [Solution](07-custom-dataset.ipynb))
 
+## Running the examples
+
+Navigate to the [Colab Web UI](https://colab.research.google.com/) and click on the GitHub tab. Enter the URL of this repository in the field titled "Enter a GitHub URL..." and hit the search icon. You should see the notebooks appear in the results. Click on the notebook you want to work with in Colab.
+
+Notebooks are numbered sequentially. For exmple `02x-` is the node classification example that you should open to solve the problem yourself. The latter notebook contains step-by-step instructions to help you do this on your own. The corresponding `02-` notebook contains the solved version, but for best results, try to hold off looking at it unless you are truly stuck or want to compare with your approach.
+
 ## References
 
 * [Graph Neural Networks and Some of GNN Applications -- Everything you need to know](https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications) (Menzil 2021) -- blog post
