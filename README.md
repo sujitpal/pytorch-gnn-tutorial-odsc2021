@@ -22,9 +22,13 @@ Attendees are expected to come away from the talk with an understanding of GNN f
 
 ## Running the examples
 
-Navigate to the [Colab Web UI](https://colab.research.google.com/) and click on the GitHub tab. Enter the URL of this repository in the field titled "Enter a GitHub URL..." and hit the search icon. You should see the notebooks appear in the results. Click on the notebook you want to work with in Colab.
+* (optional) Fork the repository
+* Navigate to the [Colab Web UI](https://colab.research.google.com/) 
+* Click on the GitHub tab. 
+* Enter the URL of your forked (or this) repository in the field titled "Enter a GitHub URL..." and hit the search icon. 
+* You should see the notebooks appear in the results. Click on the notebook you want to work with in Colab.
 
-Notebooks are numbered sequentially. For exmple `02x-` is the node classification example that you should open to solve the problem yourself. It contains step-by-step instructions to help you implement a GNN node classifier on your own. The corresponding `02-` notebook contains the solved version, but for best results, try to hold off looking at it unless you are truly stuck or want to compare with your approach.
+Notebooks are numbered sequentially. To implement the examples, open the corresponding exercise notebook. Exercise notebooks are indicated by the prefix `02x-`, `03x-`, `04x-`, `06x-` and `07x-` in their filenames. They contain step-by-step instructions to help you implement the GNN or custom component. The corresponding solution notebooks are prefixed `02-`, `03-`, `04-`, `06-` and `07-`, and contain my solution to these examples. For best results, try to hold off looking at them unless you are truly stuck or want to compare with your approach.
 
 ## References
 
