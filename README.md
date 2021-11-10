@@ -13,12 +13,12 @@ Attendees are expected to come away from the talk with an understanding of GNN f
 ## Table of Contents
 
 * [GNN Basics](01-gnn-basics.md)
-* Node classification example ([Exercise](02x-node-classification.ipynb) | [Solution](02-node-classification.ipynb))
-* Graph classification example ([Exercise](03x-graph-classification.ipynb) | [Solution](03-graph-classification.ipynb))
-* Link Prediction example ([Exercise](04x-link-prediction.ipynb) | [Solution](04-link-prediction.ipynb))
+* Node classification example ([Exercise](02-node-classification-exercise.ipynb) | [Solution](02-node-classification-solution.ipynb))
+* Graph classification example ([Exercise](03-graph-classification-exercise.ipynb) | [Solution](03-graph-classification-solution.ipynb))
+* Link Prediction example ([Exercise](04-link-prediction-exercise.ipynb) | [Solution](04-link-prediction-solution.ipynb))
 * [GNN Extensions](05-gnn-extensions.md)
-* Custom Layer example ([Exercise](06x-custom-layer.ipynb) | [Solution](06-custom-layer.ipynb))
-* Custom Dataset example ([Exercise](07x-custom-dataset.ipynb) | [Solution](07-custom-dataset.ipynb))
+* Custom Layer example ([Exercise](06-custom-layer-exercise.ipynb) | [Solution](06-custom-layer-solution.ipynb))
+* Custom Dataset example ([Exercise](07-custom-dataset-exercise.ipynb) | [Solution](07-custom-dataset-solution.ipynb))
 
 ## Running the examples
 
@@ -28,7 +28,7 @@ Attendees are expected to come away from the talk with an understanding of GNN f
 * Enter the URL of your forked (or this) repository in the field titled "Enter a GitHub URL..." and hit the search icon. 
 * You should see the notebooks appear in the results. Click on the notebook you want to work with in Colab.
 
-Notebooks are numbered sequentially. To implement the examples, open the corresponding exercise notebook. Exercise notebooks are indicated by the prefix `02x-`, `03x-`, `04x-`, `06x-` and `07x-` in their filenames. They contain step-by-step instructions to help you implement the GNN or custom component. The corresponding solution notebooks are prefixed `02-`, `03-`, `04-`, `06-` and `07-`, and contain my solution to these examples. For best results, try to hold off looking at them unless you are truly stuck or want to compare with your approach.
+Notebooks are numbered sequentially. To implement the examples, open the corresponding exercise notebook suffixed with `-exercise.ipynb` in the file name. They contain step-by-step instructions to help you implement the GNN or custom component. The corresponding solution notebooks are suffixed with `-solution.ipynb` in the file name, and contain my solution to these examples. For best results, try to hold off looking at them unless you are truly stuck or want to compare with your approach.
 
 ## References
 
